@@ -1,0 +1,168 @@
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: #434455;
+  letter-spacing: 0.02em;
+}
+
+h2,
+h3 {
+  color: #2e2f42;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ==========================================  Header style */
+
+.header-nav__logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
+}
+
+.header-nav__logo-accent {
+  color: #4d5ae5;
+}
+
+.header-nav__link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.header-nav__link:hover,
+.header-nav__link:focus {
+  color: #404bbf;
+}
+
+.header-adress__link {
+  letter-spacing: 0.02em;
+}
+
+.header-adress__link:hover,
+.header-adress__link:focus {
+  color: #404bbf;
+}
+/* ========================================== /Header style */
+/* ==========================================  Main Hero style */
+
+.hero-page {
+  background: #2e2f42;
+  color: #ffffff;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.hero-button {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: inherit;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: #404bbf;
+}
+/* ========================================== /Main Hero style */
+/* ==========================================  Main Advantages style */
+
+.advantages-item__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.advantages-item__descr {
+  letter-spacing: 0.02em;
+}
+/* ========================================== /Main Advantages style */
+/* ==========================================  Main Team style */
+
+.team-page {
+  background: #f4f4fd;
+}
+
+.team-item__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.team-item__descr {
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+/* ========================================== /Main Team style */
+/* ==========================================  Main Portfolio style */
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.portfolio-item__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-item__descr {
+  letter-spacing: 0.02em;
+}
+/* ========================================== /Main Portfolio style */
+/* ==========================================  Footer style */
+
+.footer-page {
+  background: #2e2f42;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
+
+.footer-logo-accent {
+  color: #4d5ae5;
+}
+
+.footer-descr {
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+/* ========================================== /Footer style */
