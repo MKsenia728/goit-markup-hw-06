@@ -1,5 +1,5 @@
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   color: #434455;
@@ -33,11 +33,11 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: #4d5ae5;
 }
 
 .header-nav__logo-accent {
-  color: #4d5ae5;
+  color: #2e2f42;
 }
 
 .header-nav__link {
@@ -49,6 +49,10 @@ button {
 .header-nav__link:hover,
 .header-nav__link:focus {
   color: #404bbf;
+}
+
+.header-adress {
+  font-style: normal;
 }
 
 .header-adress__link {
@@ -72,11 +76,13 @@ button {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .hero-button {
   background: #4d5ae5;
   font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: inherit;
 }
@@ -105,6 +111,19 @@ button {
   background: #f4f4fd;
 }
 
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.team-item {
+  background-color: #ffffff;
+}
+
 .team-item__title {
   font-weight: 500;
   font-size: 20px;
@@ -121,8 +140,10 @@ button {
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .portfolio-item__title {
@@ -149,11 +170,11 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: #4d5ae5;
 }
 
 .footer-logo-accent {
-  color: #4d5ae5;
+  color: #f4f4fd;
 }
 
 .footer-descr {
