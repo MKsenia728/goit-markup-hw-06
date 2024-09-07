@@ -1,8 +1,8 @@
 body {
+  background-color: #FFFFFF;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   color: #434455;
-  letter-spacing: 0.02em;
 }
 
 h2,
@@ -72,11 +72,9 @@ button {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
 }
 
 .hero-button {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -112,12 +110,10 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
 }
 
 .team-item__descr {
   letter-spacing: 0.02em;
-  text-align: center;
 }
 /* ========================================== /Main Team style */
 /* ==========================================  Main Portfolio style */
@@ -127,7 +123,6 @@ button {
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  text-align: center;
 }
 
 .portfolio-item__title {
