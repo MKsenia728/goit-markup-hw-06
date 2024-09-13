@@ -1,3 +1,3 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 
-Study project, skills HTML+CSS
+Study project, skills HTML+CSS, flex
