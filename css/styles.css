@@ -81,7 +81,7 @@ button {
 .header-nav {
   display: flex;
   align-items: center;
-  column-gap: 80px;
+  /* column-gap: 80px; */
 }
 
 .header-nav__logo {
@@ -172,7 +172,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-image.jpg);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
