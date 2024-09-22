@@ -112,11 +112,32 @@ button {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.header-nav__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: transparent;
+  bottom: -6px;
+  right: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
 
 .header-nav__link:hover,
 .header-nav__link:focus {
   color: #404bbf;
+}
+
+.header-nav__link:hover::after,
+.header-nav__link:focus::after{ 
+   background: #404bbf;
 }
 
 .header-adress {
@@ -143,10 +164,20 @@ button {
 /* ==========================================  Main Hero style */
 
 .hero-page {
+  max-width: 1440px;
+  margin: auto;
   background: #2e2f42;
   color: #ffffff;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-image.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -192,6 +223,19 @@ button {
   max-width: calc((100% - 72px) / 4);
 }
 
+.advantages-item__img {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background: #f4f4fd;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.advantages-item__icon {
+  display: block;
+  margin: 24px auto;
+}
+
 .advantages-item__title {
   font-weight: 500;
   font-size: 20px;
@@ -229,11 +273,18 @@ button {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   max-width: calc((100% - 72px) / 4);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-item__pers {
-   padding-top: 32px;
-   padding-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .team-item__title {
@@ -242,13 +293,41 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 8px;
 }
 
 .team-item__descr {
   letter-spacing: 0.02em;
   text-align: center;
 }
+
+.team-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.team-social-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: #404bbf;
+}
+
+.team-social-icon {
+  fill: #f4f4fd;
+}
+
 /* ========================================== /Main Team style */
 /* ==========================================  Main Portfolio style */
 
@@ -271,6 +350,38 @@ button {
 
 .portfolio-item {
   min-width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover,
+.advantages-item:focus {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item__img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4d5ae5;
+  padding: 40px 32px;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover .portfolio-item__overlay,
+.advantages-item:focus .portfolio-item__overlay {
+  transform: translateY(0%);
 }
 
 .portfolio-item__info {
@@ -298,7 +409,11 @@ button {
   background: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
-  
+}
+
+.footer-container {
+  display: flex;
+  gap: 120px;
 }
 
 .footer-logo {
@@ -321,5 +436,37 @@ button {
   max-width: 264px;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-icon {
+  fill: #f4f4fd;
 }
 /* ========================================== /Footer style */
