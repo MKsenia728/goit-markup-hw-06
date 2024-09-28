@@ -1,3 +1,3 @@
-# goit-markup-hw-04
+# goit-markup-hw-05
 
-Study project, skills HTML+CSS, position, transition, icon
+Study project, skills HTML+CSS, forms, modal window

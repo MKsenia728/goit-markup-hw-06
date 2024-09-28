@@ -67,10 +67,32 @@ button {
   padding-bottom: 120px;
 }
 
+.btn {
+  background-color: #4d5ae5;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: inherit;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #404bbf;
+  outline: none;
+}
+
 /* ==========================================  Header style */
 .header-page {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -81,7 +103,6 @@ button {
 .header-nav {
   display: flex;
   align-items: center;
-  /* column-gap: 80px; */
 }
 
 .header-nav__logo {
@@ -190,26 +211,12 @@ button {
   margin-bottom: 55px;
 }
 
-.hero-button {
+.hero-btn {
+  padding: 16px 32px;
   min-width: 169px;
   height: 56px;
-  background-color: #4d5ae5;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: inherit;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #404bbf;
-}
 /* ========================================== /Main Hero style */
 /* ==========================================  Main Advantages style */
 
@@ -445,6 +452,10 @@ button {
   color: #f4f4fd;
 }
 
+.footer-social {
+  margin-right: 80px;
+}
+
 .footer-social-title {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -475,4 +486,239 @@ button {
 .footer-social-icon {
   fill: #f4f4fd;
 }
+
+.footer-form-title {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding-left: 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input:focus {
+  border: 1px solid #4d5ae5;
+  outline: none;
+}
+
+.footer-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.footer-form-btn {
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-form-btn-icon {
+  fill: #ffffff;
+}
 /* ========================================== /Footer style */
+
+/* =========================================== Modal :window */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-backdrop.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal {
+  width: 408px;
+  height: 90%;
+  max-height: 584px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  overflow: auto;
+  padding: 72px 24px 24px;
+  position: relative;
+}
+
+.modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: #e7e9fc;
+
+  fill: #2e2f42;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  fill: #e7e9fc;
+  background-color: #404bbf;
+}
+
+.modal-slogan {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.form-review-wrapper {
+  margin-bottom: 8px;
+}
+.form-review-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.form-review-input-wrapper {
+  position: relative;
+}
+
+.form-review-input {
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-review-input--input {
+  height: 40px;
+  padding-left: 38px;
+}
+
+.form-review-input--comment {
+  height: 120px;
+  padding: 8px 16px;
+  resize: none;
+}
+
+.form-review-input:focus {
+  border: 1px solid #4d5ae5;
+  outline: none;
+}
+
+.form-review-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-review-input:focus + .form-review-input-icon {
+  fill: #4d5ae5;
+}
+
+.form-review-input--comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.form-review-checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
+.form-review-label-custom-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  cursor: pointer;
+  fill: transparent;
+  margin-right: 8px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-review-checkbox:checked
+  + .form-review-label-checkbox
+  > .form-review-label-custom-checkbox {
+  background-color: #404bbf;
+  border-color: #404bbf;
+  fill: #f4f4fd;
+}
+
+.form-review-checkbox:focus
+  + .form-review-label-checkbox
+  > .form-review-label-custom-checkbox {
+  border-color: #4d5ae5;
+}
+
+.form-review-label-checkbox {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.form-review-policy-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+.form-review-btn {
+  color: #ffffff;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+}
