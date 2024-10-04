@@ -136,13 +136,18 @@ button {
   fill: #ffffff;
 }
 /* ========================================================= Header ========================================================= */
+.header-page {
+  max-width: 320px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -838,6 +843,10 @@ button {
   }
 
   /* ===================== 768 section Header */
+  .header-page {
+    max-width: 768px;
+  }
+  
   .header-nav {
     justify-content: space-between;
   }
@@ -1023,7 +1032,10 @@ button {
   }
 
   /* ===================== section Header 1158*/
-
+  .header-page {
+    max-width: 1440px;
+  }
+  
   .header-nav__logo {
     margin-right: 76px;
   }
